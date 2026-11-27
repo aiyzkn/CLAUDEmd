@@ -32,7 +32,7 @@ bash ~/.claude/skills/tool-environment/scripts/detect-tools.sh [追加のコマ�
 
 ## Windows で気をつけること
 
-- **`python` が `WindowsApps` の下にある場合は、Microsoft Store の案内用スタブ。** 実体の Python ではないので、`py` や、mise・uv などの管理ツールが入れた実体を探す
+- **`python` が `WindowsApps` の下にある場合は、Microsoft Store の案内用スタブか、Store 版 Python の実行エイリアス（実体）のどちらか。** `python --version` が版を返せば実体。返さなければスタブなので、`py` や、mise・uv などの管理ツールが入れた実体を探す。検出スクリプトはこの方法で見分ける
 - **PowerShell は 5.1（`powershell`）と 7.x（`pwsh`）が別物として同居しうる。** どちらで動かすかを決めてからスクリプトを書く。`powershell -File` で起動すると 5.1 が使われる
 - **ANSI コードページが 932 のとき、BOM の無い UTF-8 の `.ps1` は 5.1 で文字化けして構文エラーになる。** 日本語を含む `.ps1` は BOM 付きで保存する
 - **Claude Code の Bash ツールは Git Bash で動く。** PowerShell からは見えるのに Git Bash からは見えないコマンドがある（逆もある）。見つからないときは、もう一方のシェルからも確かめる

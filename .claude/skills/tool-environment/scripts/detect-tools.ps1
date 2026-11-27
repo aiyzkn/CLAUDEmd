@@ -33,7 +33,15 @@ foreach ($t in ($tools | Select-Object -Unique)) {
     if (-not $cmd) { $result[$t] = [ordered]@{ found = $false }; continue }
     $entry = [ordered]@{ found = $true; path = $cmd.Source }
     if ($t -match '^python3?$' -and $cmd.Source -like '*\WindowsApps\*') {
-        $entry.note = 'Microsoft Store の案内用スタブ。実体の Python ではない'
+        # WindowsApps の python.exe は、Store 版 Python の実行エイリアス（実体）か、未導入時の案内用スタブのどちらか。
+        # スタブは --version に版を返さない（Store への案内を出して終わる）ので、版が返るかで見分ける
+        $ver = Get-FirstLine $cmd.Source '--version'
+        if ($ver -match '^Python \d') {
+            $entry.version = $ver
+            $entry.note = 'Microsoft Store 版 Python（WindowsApps の実行エイリアス経由。実体）'
+        } else {
+            $entry.note = 'Microsoft Store の案内用スタブ。実体の Python ではない'
+        }
     } elseif ($t -eq 'powershell') {
         $entry.version = Get-FirstLine $cmd.Source '-NoProfile -Command $PSVersionTable.PSVersion.ToString()'
     } elseif ($t -eq 'pwsh') {
