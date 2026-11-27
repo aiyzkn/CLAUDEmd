@@ -1,0 +1,320 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git blame:*)",
+      "Bash(git branch:*)",
+      "Bash(git cat-file:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git diff:*)",
+      "Bash(git fetch:*)",
+      "Bash(git for-each-ref:*)",
+      "Bash(git log:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git merge:*)",
+      "Bash(git mv:*)",
+      "Bash(git remote -v)",
+      "Bash(git reset:*)",
+      "Bash(git restore:*)",
+      "Bash(git rev-list:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git rm:*)",
+      "Bash(git shortlog:*)",
+      "Bash(git show:*)",
+      "Bash(git stash list)",
+      "Bash(git status:*)",
+      "Bash(git switch:*)",
+      "Bash(git update-index:*)",
+      "Bash(git worktree list)",
+      "Bash(awk:*)",
+      "Bash(basename:*)",
+      "Bash(cat:*)",
+      "Bash(cmp:*)",
+      "Bash(comm:*)",
+      "Bash(command -v:*)",
+      "Bash(cut:*)",
+      "Bash(diff:*)",
+      "Bash(dirname:*)",
+      "Bash(file:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(nl:*)",
+      "Bash(printf:*)",
+      "Bash(sed -n:*)",
+      "Bash(sha256sum:*)",
+      "Bash(sort:*)",
+      "Bash(stat:*)",
+      "Bash(tail:*)",
+      "Bash(tr:*)",
+      "Bash(uniq:*)",
+      "Bash(wc:*)",
+      "Bash(which:*)",
+      "Bash(xxd:*)",
+      "Bash(date:*)",
+      "Bash(echo:*)",
+      "Bash(env)",
+      "Bash(mkdir -p:*)",
+      "Bash(netstat -ano)",
+      "Bash(reg query:*)",
+      "Bash(taskkill //F //IM:*)",
+      "Bash(tasklist:*)",
+      "Bash(winget list:*)",
+      "Bash(bash -n:*)",
+      "Bash(node:*)",
+      "Bash(npx:*)",
+      "Bash(powershell:*)",
+      "Bash(powershell.exe:*)",
+      "Bash(pwsh:*)",
+      "Bash(pwsh.exe:*)",
+      "Bash(python:*)",
+      "Bash(PYTHONUTF8=1 python:*)",
+      "Bash(PYTHONUTF8=1 PYTHONIOENCODING=utf-8 python:*)",
+      "Bash(dotnet:*)",
+      "Bash(DOTNET_ROLL_FORWARD=LatestMajor dotnet:*)",
+      "Bash(npm:*)",
+      "Bash(java -version)",
+      "Bash(javac -version)",
+      "Bash(cloc:*)",
+      "Bash(gitleaks:*)",
+      "Bash(jq:*)",
+      "Bash(pandoc:*)",
+      "Bash(pdftotext:*)",
+      "Bash(piconv:*)",
+      "Bash(\"/c/Program Files/Git/usr/bin/core_perl/piconv\":*)",
+      "Bash(tar -tf:*)",
+      "Bash(unzip -l:*)",
+      "Bash(gh api:*)",
+      "Bash(gh auth status)",
+      "Bash(gh issue:*)",
+      "Bash(gh label:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh release:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh run:*)",
+      "Bash(gh search:*)",
+      "Bash(pac --version)",
+      "Bash(pac help:*)",
+      "Bash(podman --version)",
+      "Bash(podman images:*)",
+      "Bash(podman info:*)",
+      "Bash(podman inspect:*)",
+      "Bash(podman logs:*)",
+      "Bash(podman machine:*)",
+      "Bash(podman ps:*)",
+      "Bash(wsl.exe --list --verbose)",
+      "Bash(wsl.exe -l -v)",
+      "Bash(wsl.exe --shutdown)",
+      "Bash(wsl.exe -d Ubuntu -- bash:*)",
+      "Bash(wsl.exe -d Ubuntu -- iconv:*)",
+      "Bash(wsl.exe -d Ubuntu -- jq:*)",
+      "Bash(wsl.exe -d Ubuntu -- pkill:*)",
+      "Bash(wsl.exe -d Ubuntu -- which:*)",
+      "Bash(wsl.exe -d Ubuntu -- wslpath:*)",
+      "Bash(claude --version)",
+      "Read(//c/Program Files*/**)",
+      "Read(//tmp/**)",
+      "Skill",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:awesomeclaudeskills.com)",
+      "WebFetch(domain:claude.com)",
+      "WebFetch(domain:crates.io)",
+      "WebFetch(domain:designmd.app)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:kawasin73.hatenablog.com)",
+      "WebFetch(domain:learn.microsoft.com)",
+      "WebFetch(domain:mcpservers.org)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:qiita.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:refero.design)",
+      "WebFetch(domain:styles.refero.design)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:zenn.dev)",
+      "WebSearch",
+      "mcp__claude_ai_Microsoft_Learn__microsoft_docs_search",
+      "mcp__claude_ai_Microsoft_Learn__microsoft_docs_fetch",
+      "mcp__claude_ai_Microsoft_Learn__microsoft_code_sample_search",
+      "Bash(winget search *)",
+      "Bash(dnx --help)",
+      "Bash(where.exe claude *)",
+      "Bash(schtasks /query /fo csv /nh)",
+      "Bash(git pull *)",
+      "Bash(git checkout-index *)",
+      "Bash(git check-attr *)"
+    ],
+    "deny": [
+      "Bash(docker *)",
+      "Bash(docker)",
+      "Bash(docker.exe *)",
+      "Bash(git -C * push*)",
+      "Bash(git push*)",
+      "Bash(wsl* -- docker)",
+      "Bash(wsl* -- docker*)",
+      "Bash(wsl* docker *)",
+      "Bash(wsl* docker)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.azure/**)",
+      "Read(~/.git-credentials)",
+      "Read(~/.npmrc)",
+      "Read(~/.netrc)",
+      "Read(~/AppData/Roaming/GitHub CLI/**)",
+      "Read(~/.claude/.credentials.json)",
+      "Bash(*.ssh/*)",
+      "Bash(*.ssh\\*)",
+      "Bash(*.aws/*)",
+      "Bash(*.aws\\*)",
+      "Bash(* .env*)",
+      "Bash(*/.env*)",
+      "Read(//**/.env)",
+      "Read(//**/.env.*)",
+      "Read(//**/*.pem)"
+    ],
+    "ask": [
+      "Bash(python -m pip install:*)",
+      "Bash(pip install:*)",
+      "Bash(npm publish:*)",
+      "Bash(dotnet nuget push:*)",
+      "Bash(winget install:*)",
+      "Bash(gh repo delete:*)",
+      "Bash(gh release delete:*)",
+      "Bash(claude mcp *)",
+      "Edit(~/.claude/settings.json)",
+      "Edit(~/.claude/settings.local.json)",
+      "Edit(~/.claude/hooks/**)",
+      "Edit(**/.claude/settings.json)",
+      "Edit(**/.claude/settings.local.json)",
+      "Edit(**/.claude/hooks/**)",
+      "Edit(**/.mcp.json)",
+      "Edit(**/.githooks/**)",
+      "Bash(git reset --hard*)",
+      "Bash(git -C * reset --hard*)",
+      "Bash(git clean -f*)",
+      "Bash(git -C * clean -f*)",
+      "Bash(git checkout -- *)",
+      "Bash(git -C * checkout -- *)",
+      "Bash(git restore *)",
+      "Bash(git -C * restore *)",
+      "Bash(git stash drop*)",
+      "Bash(git stash clear*)",
+      "Bash(rm -r *)",
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(*Remove-Item*-Recurse*)",
+      "Bash(curl *)",
+      "Bash(curl.exe *)",
+      "Bash(wget *)",
+      "Bash(*Invoke-WebRequest*)",
+      "Bash(*Invoke-RestMethod*)",
+      "Bash(wsl* curl*)",
+      "Bash(wsl* wget*)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@2.2.34"
+  },
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          },
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/bash-guard.py\"",
+            "timeout": 180
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/hooks/job-resume-check.ps1\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/post-edit-check.py\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/hooks/notify.ps1\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/handover-compact.py\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/handover-compact.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/stop-commit-reminder.py\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
