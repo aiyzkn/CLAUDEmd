@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize text files to LF in the repository and in the working tree.
+# Without eol=lf, core.autocrlf=true (the Git for Windows default) checks them
+# out as CRLF, which differs from the LF files deployed to ~/.claude
+# and makes Git warn "LF will be replaced by CRLF".
+* text=auto eol=lf
+
+# Shell scripts must stay LF: CRLF breaks them at run time ($'\r': command not found)
+*.sh   text eol=lf
+*.bash text eol=lf
+
+# cmd.exe can misread labels and goto in LF-only batch files
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
