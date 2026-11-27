@@ -60,7 +60,7 @@ git diff -U0 HEAD | grep -nE '^\+.*(TODO|FIXME|XXX|WIP|console\.log|print\(|dbg!
 
 ```markdown
 **状況: 完了**（または **部分完了** / **未完了**）
-残作業（ユーザー）: なし（または `git push` など）
+残作業（ユーザー）: なし（または、承認が要る操作・ユーザーの手作業など）
 
 - 変更: <git diff --stat の要約>
 - 検証: `<コマンド>` → exit 0（最後の編集の後に実行）
